@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 1200px;
+      max-width: 1180px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
@@ -22,6 +22,12 @@
       margin-top: 36px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 6px;
+    }
+
+    .subtitle {
+      color: #555;
+      font-size: 16px;
+      margin-top: 0;
     }
 
     .note {
@@ -75,22 +81,20 @@
 <body>
 
 <h1>PoSafeNet: Anonymous Supplementary Videos</h1>
+<p class="subtitle">Vision-based autonomous driving comparisons in VISTA.</p>
 
 <div class="note">
-  This anonymous supplementary page provides videos for the vision-based autonomous driving experiment reported in the submission.
+  This anonymous supplementary page provides videos corresponding to the VISTA autonomous driving experiment reported in the submission.
+  The videos qualitatively illustrate closed-loop behavior; quantitative results are reported in the main paper.
 </div>
 
-<h2>Vision-Based Autonomous Driving in VISTA</h2>
-
-<p>
-The videos show representative closed-loop trajectories for baseline methods and PoSafeNet variants in the VISTA autonomous driving benchmark.
-</p>
+<h2>Baselines</h2>
 
 <div class="video-grid">
 
   <div class="video-card">
     <h3>ABNet</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_abnet.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -99,7 +103,7 @@ The videos show representative closed-loop trajectories for baseline methods and
 
   <div class="video-card">
     <h3>BarrierNet</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_barriernet.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -108,7 +112,7 @@ The videos show representative closed-loop trajectories for baseline methods and
 
   <div class="video-card">
     <h3>DFBNet</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_dfbnet.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -117,7 +121,7 @@ The videos show representative closed-loop trajectories for baseline methods and
 
   <div class="video-card">
     <h3>HQP</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_HQPB.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -126,47 +130,53 @@ The videos show representative closed-loop trajectories for baseline methods and
 
   <div class="video-card">
     <h3>HQP 4-layer</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_HQPB_4layer.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="caption">Hierarchical QP baseline under a four-layer hierarchy.</div>
   </div>
 
-  <div class="video-card">
-    <h3>PoSafeNet-Hard</h3>
-    <video controls>
-      <source src="assets/video_posafenet_hard.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="caption">PoSafeNet hard-selection variant.</div>
-  </div>
+</div>
 
-  <div class="video-card">
-    <h3>PoSafeNet-Hard 4-layer</h3>
-    <video controls>
-      <source src="assets/video_posafenet_hard_4layer.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="caption">PoSafeNet hard-selection variant under a four-layer hierarchy.</div>
-  </div>
+<h2>PoSafeNet Variants</h2>
+
+<div class="video-grid">
 
   <div class="video-card">
     <h3>PoSafeNet-Mix</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_posafenet_mix.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="caption">PoSafeNet mixture variant.</div>
+    <div class="caption">Mixture variant of the proposed poset-structured safety layer.</div>
+  </div>
+
+  <div class="video-card">
+    <h3>PoSafeNet-Hard</h3>
+    <video controls preload="metadata">
+      <source src="assets/video_posafenet_hard.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="caption">Hard-selection variant of the proposed poset-structured safety layer.</div>
   </div>
 
   <div class="video-card">
     <h3>PoSafeNet-Mix 4-layer</h3>
-    <video controls>
+    <video controls preload="metadata">
       <source src="assets/video_posafenet_mix_4layer.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="caption">PoSafeNet mixture variant under a four-layer hierarchy.</div>
+    <div class="caption">Mixture variant under a four-layer hierarchy.</div>
+  </div>
+
+  <div class="video-card">
+    <h3>PoSafeNet-Hard 4-layer</h3>
+    <video controls preload="metadata">
+      <source src="assets/video_posafenet_hard_4layer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="caption">Hard-selection variant under a four-layer hierarchy.</div>
   </div>
 
 </div>
